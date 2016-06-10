@@ -1,6 +1,6 @@
 assets:
   - wordpress.sql.gz
-steps:
+steps: 
   - name: Test Build
     plugin: WordPressApp
     subDirectory: 'www'
