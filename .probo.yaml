@@ -1,8 +1,11 @@
 assets:
   - wordpress.sql.gz
-steps:
+steps: 
   - name: Test Build
     plugin: WordPressApp
     subDirectory: 'www'
     database: wordpress.sql.gz
     databaseGzipped: true
+
+  - name: Test Step
+    command: printf '\033[0;31m [This should be red like a rose] \033[0m [This should not]</pre><script>alert("Do this alert?!");</script><h1>Here is a title</h1><pre>'
