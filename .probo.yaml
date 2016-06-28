@@ -1,6 +1,23 @@
 assets:
   - wordpress.sql.gz
 steps:
+  - name: Failure
+    plugin: Shell
+    command: |
+      curl nonsense 
+      echo "Nar"
+  - name: Testing
+    plugin: Shell
+    command: 'true 
+      echo "That exited $?"
+      false
+      echo "That exited $?"'
+  - name: Testing1
+    plugin: Shell
+    command: true ; echo "That exited $?"
+  - name: Testing2
+    plugin: Shell
+    command: false ; echo "That exited $?"
   - name: Test Build
     plugin: WordPressApp
     subDirectory: 'www'
