@@ -9,3 +9,5 @@ steps:
   - name: Echo the things
     plugin: Shell
     command: 'echo "Hello World!"'
+  - name: Test Step
+    command: printf '\033[0;31m [This should be red like a rose] \033[0m'
