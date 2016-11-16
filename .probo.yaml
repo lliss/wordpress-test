@@ -7,4 +7,5 @@ steps:
     database: wordpress.sql.gz
     databaseGzipped: true
   - name: Echo the things
-    echo "test"
+    plugin: Shell
+    command: 'print "Hello World!"'
