@@ -8,4 +8,4 @@ steps:
     databaseGzipped: true
   - name: Echo the things
     plugin: Shell
-    command: 'print "Hello World!"'
+    command: 'echo "Hello World!"'
