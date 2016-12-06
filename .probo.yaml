@@ -6,6 +6,8 @@ steps:
     subDirectory: 'www'
     database: wordpress.sql.gz
     databaseGzipped: true
+    updatePlugins: true
+    flushCaches: false
   - name: Echo the things
     plugin: Shell
     command: 'echo "Hello World!"'
