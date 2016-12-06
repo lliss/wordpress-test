@@ -7,7 +7,7 @@ steps:
     database: wordpress.sql.gz
     databaseGzipped: true
     updatePlugins: true
-    flushCaches: false
+    flushCaches: true
   - name: Echo the things
     plugin: Shell
     command: 'echo "Hello World!"'
